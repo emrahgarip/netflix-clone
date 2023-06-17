@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: $black;
+}
+
+html {
+  font-size-adjust: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+.app-pages{
+  background: $black-100;
+  width: 100%;
+  height: auto;
+}

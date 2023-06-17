@@ -1,0 +1,74 @@
+.email-form {
+  margin-top: 32px;
+
+  h3 {
+    font-size: 20px;
+    color: $white;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    max-width: 36.625rem;
+
+    &__label {
+      position: relative;
+      width: 100%;
+
+      .form-control {
+        min-width: 12.5rem;
+        width: 100%;
+        padding: 24px 16px 8px;
+        background: rgba(22, 22, 22, 0.7);
+        outline: none;
+        border: 1px solid;
+        border-color: rgba(128, 128, 128, 0.7);
+        border-radius: 4px;
+        color: $white;
+        line-height: 22px;
+        font-size: 16px;
+
+        &:focus {
+
+          & ~ span {
+            top: 18px;
+            transition: all .3s ease;
+            font-size: 12px;
+          }
+        }
+      }
+
+      span {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba($white, 60%);
+        font-size: 14px;
+        transition: all .3s ease;
+      }
+    }
+
+    .start-button {
+      background: $red;
+      border: 1px solid $red;
+      border-radius: 4px;
+      color: $white;
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+      padding: 12px 24px;
+      white-space: nowrap;
+      font-size: 24px;
+      cursor: pointer;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: $white;
+      }
+    }
+  }
+}
