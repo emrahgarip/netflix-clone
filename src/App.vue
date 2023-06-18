@@ -5,6 +5,8 @@ import { RouterView } from 'vue-router'
 <template>
   <div class="app-pages">
     <AppHeader></AppHeader>
-    <RouterView />
+    <main>
+      <RouterView />
+    </main>
   </div>
 </template>

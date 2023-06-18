@@ -9,6 +9,13 @@ import RightArrow from './components/icons/RightArrow.vue';
 //LAYOUTS
 import AppHeader from './components/layouts/AppHeader.vue';
 
+//FORMS
+import EmailForm from './components/form/EmailForm.vue';
+
+//APP LEVEL
+import AppAccordion from './components/AppAccordion.vue';
+
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -32,4 +39,9 @@ app.component('RightArrow', RightArrow);
 //LAYOUTS
 app.component('AppHeader', AppHeader);
 
+//FORMS
+app.component('EmailForm', EmailForm);
+
+//APP LEVEL
+app.component('AppAccordion', AppAccordion);
 app.mount('#app')
