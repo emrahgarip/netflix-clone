@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  width: fit-content;
   
   .icon {
     position: absolute;
@@ -43,5 +44,9 @@
     width: auto;
     appearance: none;
     line-height: 20px;
+
+    option {
+      color: $black;
+    }
   }
 }

@@ -1,5 +1,6 @@
 <script setup>
-const faq = [
+  import { RouterLink } from 'vue-router';
+  const faq = [
     {
       "title" : "What is Netflix?",
       "content" : "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices."
@@ -103,6 +104,43 @@ const faq = [
         title="Frequently Asked Questions"
         :data="faq"
       ></AppAccordion>
+      <email-form></email-form>
     </section>
+    <footer class="home--footer">
+      <p>Questions? Call <a href="tel:0850-390-7444">0850-390-7444</a></p>
+      <div class="home--footer__navbar">
+        <nav class="home--footer__navbar--nav">
+          <RouterLink to="/">FAQ</RouterLink>
+          <RouterLink to="/">Help Center</RouterLink>
+          <RouterLink to="/">Account</RouterLink>
+          <RouterLink to="/">Media Center</RouterLink>
+          <RouterLink to="/">Investor Relations</RouterLink>
+          <RouterLink to="/">Jobs</RouterLink>
+          <RouterLink to="/">Redeem Gift Cards</RouterLink>
+          <RouterLink to="/">Ways to Watch</RouterLink>
+          <RouterLink to="/">Terms of Use</RouterLink>
+          <RouterLink to="/">Privacy</RouterLink>
+          <RouterLink to="/">Cookie Preferences</RouterLink>
+          <RouterLink to="/">Corporate Information</RouterLink>
+          <RouterLink to="/">Contact Us</RouterLink>
+          <RouterLink to="/">Speed Test</RouterLink>
+          <RouterLink to="/">Legal Notices</RouterLink>
+          <RouterLink to="/">Only on Netflix</RouterLink>
+        </nav>
+      </div>
+      <div class="select-lang ml-0">
+        <div class="icon">
+          <GlobalEarth></GlobalEarth>
+        </div>
+        <select name="" id="">
+          <option value="English">English</option>
+          <option value="Türkçe">Türkçe</option>
+        </select>
+        <div class="caret-down">
+          <CaretDown></CaretDown>
+        </div>
+      </div>
+      <p class="mt-36">Netflix Türkiye</p>
+    </footer>
   </div>
 </template>
