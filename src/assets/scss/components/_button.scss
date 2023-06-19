@@ -13,5 +13,10 @@
     font-weight: 500;
     line-height: 1;
     min-height: 2rem;
+    border: 1px solid $red;
+  }
+
+  &.block {
+    display: block;
   }
 }

@@ -72,3 +72,27 @@
     }
   }
 }
+
+.auth-form {
+  width: 100%;
+  flex-grow: 1;
+
+  &__title {
+    color: $white;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      color: #737373;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  }
+}

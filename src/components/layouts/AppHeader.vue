@@ -2,7 +2,7 @@
   import { RouterLink } from 'vue-router';
 </script>
 <template>
-  <header class="header">
+  <header class="header" v-if="this.$route.name !== 'login' ">
     <RouterLink to="/" class="header--logo">
       <AppLogo></AppLogo>
     </RouterLink>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <!-- SIGN IN -->
-      <RouterLink to="/" class="button signin">Sign In</RouterLink>
+      <RouterLink to="/login" class="button signin">Sign In</RouterLink>
     </div>
   </header>
 </template>
