@@ -1,9 +1,10 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router';
+const route = useRoute();
 </script>
 
 <template>
-  <div class="app-pages">
+  <div class="app-pages" :class="{ 'app-browse' : route.name === 'browse' }">
     <AppHeader></AppHeader>
     <main>
       <RouterView />

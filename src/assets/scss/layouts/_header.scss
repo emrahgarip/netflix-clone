@@ -17,6 +17,20 @@
         height: 40px;
       }
     }
+
+    &.small {
+      .logo {
+        overflow: hidden;
+        width: 93px;
+        height: 25px;
+  
+        svg {
+          fill: $red;
+          width: 100%;
+          height: 25px;
+        }
+      }
+    }
   }
 
   &--actions {
@@ -28,5 +42,14 @@
     & > * {
       margin-left: 12px;
     }
+  }
+
+  &--browse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 70px;
   }
 }

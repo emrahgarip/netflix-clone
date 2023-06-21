@@ -39,7 +39,10 @@
             </label>
           </div>
           <!-- SUBMIT BUTTON -->
-          <button class="button signin w-full py-15 mt-22 mb-12 text-base font-medium">Sign In</button>
+          <button 
+            class="button signin w-full py-15 mt-22 mb-12 text-base font-medium"
+            @click="$router.push('/browse')"
+          >Sign In</button>
           <div class="auth-form__action">
             <CustomCheckbox id="rememberMe"></CustomCheckbox>
             <RouterLink to="/">Need help?</RouterLink>

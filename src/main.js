@@ -9,6 +9,7 @@ import CheckIcon from "./components/icons/CheckIcon.vue";
 
 //LAYOUTS
 import AppHeader from './components/layouts/AppHeader.vue';
+import AppNavigation from './components/layouts/AppNavigation.vue';
 
 //FORMS
 import EmailForm from './components/form/EmailForm.vue';
@@ -41,6 +42,7 @@ app.component('CheckIcon', CheckIcon);
 
 //LAYOUTS
 app.component('AppHeader', AppHeader);
+app.component('AppNavigation', AppNavigation);
 
 //FORMS
 app.component('EmailForm', EmailForm);
