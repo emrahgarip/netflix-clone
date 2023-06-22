@@ -1,3 +1,6 @@
+<script setup>
+import DropdownProfile from "../dropdown/DropdownProfile.vue";
+</script>
 <template>
   <div class="navbar">
     <nav class="navbar--nav">
@@ -8,7 +11,7 @@
       <RouterLink to="/browse">My list</RouterLink>
     </nav>
     <section class="navbar--actions">
-      profile
+      <DropdownProfile></DropdownProfile>
     </section>
   </div>
 </template>

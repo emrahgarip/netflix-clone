@@ -6,10 +6,16 @@ import GlobalEarth from './components/icons/GlobalEarth.vue';
 import PlusIcon from './components/icons/PlusIcon.vue';
 import RightArrow from './components/icons/RightArrow.vue';
 import CheckIcon from "./components/icons/CheckIcon.vue";
+import SearchIcon from "./components/icons/SearchIcon.vue";
+import BellIcon from "./components/icons/BellIcon.vue";
 
 //LAYOUTS
 import AppHeader from './components/layouts/AppHeader.vue';
 import AppNavigation from './components/layouts/AppNavigation.vue';
+
+//DROPDOWN
+
+import AppDropdown from "./components/dropdown/AppDropdown.vue";
 
 //FORMS
 import EmailForm from './components/form/EmailForm.vue';
@@ -39,6 +45,8 @@ app.component('GlobalEarth', GlobalEarth);
 app.component('PlusIcon', PlusIcon);
 app.component('RightArrow', RightArrow);
 app.component('CheckIcon', CheckIcon);
+app.component('SearchIcon', SearchIcon);
+app.component('BellIcon', BellIcon);
 
 //LAYOUTS
 app.component('AppHeader', AppHeader);
@@ -47,6 +55,9 @@ app.component('AppNavigation', AppNavigation);
 //FORMS
 app.component('EmailForm', EmailForm);
 app.component('CustomCheckbox', CustomCheckbox);
+
+//DROPDOWN
+app.component('AppDropdown', AppDropdown);
 
 //APP LEVEL
 app.component('AppAccordion', AppAccordion);

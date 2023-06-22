@@ -1,0 +1,28 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .dropdown-button {}
+
+  .dropdown-content {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
+  .dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 170px;
+    max-width: max-content;
+    background: rgba($red, 75%);
+
+    .menu-item {
+      color: $white;
+      white-space: nowrap;
+      padding: 4px 16px;
+    }
+  }
+}
