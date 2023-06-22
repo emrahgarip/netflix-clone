@@ -1,5 +1,7 @@
 <script setup>
 import DropdownProfile from "../dropdown/DropdownProfile.vue";
+import NotificationDropdown from "../dropdown/NotificationDropdown.vue";
+
 </script>
 <template>
   <div class="navbar">
@@ -11,7 +13,14 @@ import DropdownProfile from "../dropdown/DropdownProfile.vue";
       <RouterLink to="/browse">My list</RouterLink>
     </nav>
     <section class="navbar--actions">
-      <DropdownProfile></DropdownProfile>
+      <ul class="navbar--action__list">
+        <li class="navbar--action__list__item">
+          <NotificationDropdown></NotificationDropdown>
+        </li>
+        <li class="navbar--action__list__item">
+          <DropdownProfile></DropdownProfile>
+        </li>
+      </ul>
     </section>
   </div>
 </template>
