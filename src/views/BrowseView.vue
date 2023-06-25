@@ -4,5 +4,6 @@ import CoverVideo from '../components/layouts/CoverVideo.vue';
 <template>
   <div class="browse">
     <CoverVideo></CoverVideo>
+    <div class="browse__container"></div>
   </div>
 </template>

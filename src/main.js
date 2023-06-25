@@ -8,6 +8,8 @@ import RightArrow from './components/icons/RightArrow.vue';
 import CheckIcon from "./components/icons/CheckIcon.vue";
 import SearchIcon from "./components/icons/SearchIcon.vue";
 import BellIcon from "./components/icons/BellIcon.vue";
+import PlayIcon from "./components/icons/PlayIcon.vue";
+import InfoIcon from "./components/icons/InfoIcon.vue";
 
 //LAYOUTS
 import AppHeader from './components/layouts/AppHeader.vue';
@@ -47,6 +49,8 @@ app.component('RightArrow', RightArrow);
 app.component('CheckIcon', CheckIcon);
 app.component('SearchIcon', SearchIcon);
 app.component('BellIcon', BellIcon);
+app.component('PlayIcon', PlayIcon);
+app.component('InfoIcon', InfoIcon);
 
 //LAYOUTS
 app.component('AppHeader', AppHeader);

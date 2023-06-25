@@ -33,6 +33,20 @@ const getFilmTitle = computed(() => {
   <div class="cover">
     <div class="cover__image-box">
       <img :src="`https://image.tmdb.org/t/p/original${getFilmTitle.backdrop_path}`" />
+      <div class="cover__meta">
+        <h4>FAST X</h4>
+        <p>The final chapters of one of cinema's most storied and popular global franchises, now in its third decade and still going strong with the same core cast and characters as when it began.</p>
+        <div class="cover__meta__buttons">
+          <button class="play">
+            <PlayIcon></PlayIcon>
+            Watch now
+          </button>
+          <button class="info">
+            <InfoIcon></InfoIcon>
+            More info
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
